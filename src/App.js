@@ -1,5 +1,4 @@
 import './App.css';
-import { AiFillInstagram } from 'react-icons/ai';
 import Review from './components/Review';
 
 function App() {

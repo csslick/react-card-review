@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import people from '../data'
-import { FaChevronLeft, FaChevronRight, FaQuoteRight} from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 export default function Review() {
   const [index, setIndex] = useState(0);
@@ -8,7 +8,7 @@ export default function Review() {
   console.log(people)
 
   function prevIndex() {
-    if(index == 0) {
+    if(index === 0) {
       setIndex(people.length - 1);
       return;
     }  
@@ -16,7 +16,7 @@ export default function Review() {
   }
 
   function nextIndex() {
-    if(index == people.length-1) {
+    if(index === people.length-1) {
       setIndex(0);
       return
     }  
@@ -26,6 +26,7 @@ export default function Review() {
   function randomIndex() {
     const r = Math.floor(Math.random()*(people.length));
     console.log(r);
+    // 중복 채크
     if(r === index) {
       nextIndex();
     } else {
