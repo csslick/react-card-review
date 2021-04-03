@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  line-height: 140%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.icon {
+  font-size: 4rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1, h2 {
+  margin: 1em;
+}
+
+p {  
+  margin: 1em 0;
+}
+
+main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  text-align: center;
+  background: #ececec;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 500px;
+  background: #fff;
+  box-shadow: 2px 2px 16px rgba(0,0,0,0.2);
+  padding: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card figure img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+
+.name {
+  margin-top: 1em;
+  text-transform: capitalize;
+}
+.job {
+  margin-bottom: 1em;
+  color: #27ae60;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.prev-btn, .next-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #27ae60;
+  padding: 0 10px;
+}
+
+.random-btn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+}
+
+.random-btn:hover {
+  opacity: 0.8;
 }
